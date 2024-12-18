@@ -32,6 +32,16 @@ document.getElementById("showButton").addEventListener("click", function () {
   guideInfo.classList.add("show");
 });
 
+document.getElementById("showButton").addEventListener("touchstart", function () {
+  var guideInfo = document.getElementById("guideInfo");
+  var button = document.getElementById("showButton");
+
+  button.classList.add("hidden");
+
+  guideInfo.classList.remove("hidden");
+  guideInfo.classList.add("show");
+});
+
 document.getElementById("closeButton").addEventListener("click", function () {
   var guideInfo = document.getElementById("guideInfo");
   var button = document.getElementById("showButton");
