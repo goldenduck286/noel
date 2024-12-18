@@ -83,3 +83,11 @@ function createSnowflakes() {
 
 window.onload = createSnowflakes;
 
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") { 
+    const closeButton = document.getElementById("closeButton");
+    if (closeButton) {
+      closeButton.click(); 
+    }
+  }
+});
